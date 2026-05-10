@@ -1,0 +1,51 @@
+apex 
+
+
+go to https://orgfarm-1ec037e9b6-dev-ed.develop.my.salesforce.com/home/home.jsp?source=lex
+
+login with swapnilchougule330-vsnm@force.com.
+and pass 
+
+goto devconsol
+
+public class Calculator {
+
+    public static void calculate() {
+
+        Integer a = 10;
+        Integer b = 5;
+
+        System.debug('Addition: ' + (a + b));
+        System.debug('Subtraction: ' + (a - b));
+        System.debug('Multiplication: ' + (a * b));
+        System.debug('Division: ' + (a / b));
+    }
+}
+
+***************** apex selection sort ************************
+
+public class SelectionSort {
+
+    public static void sortNumbers() {
+
+        Integer[] arr = new Integer[]{64, 25, 12, 22, 11};
+
+        for(Integer i = 0; i < arr.size(); i++) {
+
+            Integer minIndex = i;
+
+            for(Integer j = i + 1; j < arr.size(); j++) {
+
+                if(arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            Integer temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+
+        System.debug('Sorted Array: ' + arr);
+    }
+}
