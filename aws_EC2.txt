@@ -1,0 +1,242 @@
+# Case Study on Amazon EC2 and Amazon EC2 Web Services
+
+# Aim
+
+To study Amazon EC2 and understand the working of Amazon EC2 web services in cloud computing.
+
+---
+
+# Introduction to Amazon EC2
+
+[Amazon EC2 (Elastic Compute Cloud)](https://aws.amazon.com/ec2/?utm_source=chatgpt.com) is a web service provided by [Amazon Web Services (AWS)](https://aws.amazon.com?utm_source=chatgpt.com) that offers scalable virtual servers in the cloud.
+
+EC2 allows users to:
+
+* Launch virtual machines
+* Host websites/applications
+* Scale resources dynamically
+* Pay only for used resources
+
+---
+
+# What is Cloud Computing?
+
+Cloud computing provides:
+
+* Computing resources
+* Storage
+* Networking
+* Software services
+
+through the internet on demand.
+
+---
+
+# Features of Amazon EC2
+
+| Feature             | Description                   |
+| ------------------- | ----------------------------- |
+| Elasticity          | Scale resources automatically |
+| Virtual Servers     | Create cloud-based instances  |
+| Pay-as-you-go       | Billing based on usage        |
+| Security            | AWS IAM and Security Groups   |
+| Scalability         | Increase/decrease resources   |
+| Multiple OS Support | Linux, Windows, Ubuntu etc.   |
+
+---
+
+# EC2 Architecture
+
+```text id="s6aj9y"
+User → AWS Cloud → EC2 Instance → Application
+```
+
+---
+
+# Components of Amazon EC2
+
+| Component      | Purpose               |
+| -------------- | --------------------- |
+| EC2 Instance   | Virtual server        |
+| AMI            | Amazon Machine Image  |
+| EBS            | Elastic Block Storage |
+| Security Group | Firewall rules        |
+| Key Pair       | Secure login          |
+| Elastic IP     | Static public IP      |
+
+---
+
+# Working of Amazon EC2
+
+1. User creates AWS account.
+2. Select EC2 service.
+3. Launch virtual machine (instance).
+4. Configure storage/network/security.
+5. Connect to instance.
+6. Deploy application.
+
+---
+
+# Steps to Launch EC2 Instance
+
+---
+
+# Step 1 — Create AWS Account
+
+Open:
+
+[AWS Console](https://aws.amazon.com/console/?utm_source=chatgpt.com)
+
+Create/sign in to AWS account.
+
+---
+
+# Step 2 — Open EC2 Dashboard
+
+Navigation:
+
+```text id="jlwm4m"
+AWS Console → Services → EC2
+```
+
+---
+
+# Step 3 — Launch Instance
+
+Click:
+
+```text id="5db1uq"
+Launch Instance
+```
+
+---
+
+# Step 4 — Configure Instance
+
+## Choose:
+
+| Setting        | Example        |
+| -------------- | -------------- |
+| AMI            | Ubuntu/Linux   |
+| Instance Type  | t2.micro       |
+| Key Pair       | Create new     |
+| Security Group | Allow SSH/HTTP |
+
+---
+
+# Step 5 — Connect to Instance
+
+Using SSH:
+
+```bash id="7h4l0f"
+ssh -i mykey.pem ubuntu@public-ip
+```
+
+---
+
+# Step 6 — Deploy Application
+
+Example:
+
+* Web server
+* Database
+* Python application
+
+---
+
+# Example Use Case
+
+## E-Commerce Website Hosting
+
+Amazon EC2 can host:
+
+* Frontend website
+* Backend APIs
+* Databases
+* Payment services
+
+Benefits:
+
+* High availability
+* Auto scaling
+* Reliable infrastructure
+
+---
+
+# EC2 Instance Types
+
+| Type              | Usage                 |
+| ----------------- | --------------------- |
+| General Purpose   | Balanced workloads    |
+| Compute Optimized | High CPU tasks        |
+| Memory Optimized  | Large databases       |
+| Storage Optimized | Big storage workloads |
+
+---
+
+# Security in EC2
+
+AWS provides:
+
+* Security Groups
+* IAM Users/Roles
+* Encryption
+* Key Pair authentication
+
+---
+
+# Advantages of Amazon EC2
+
+1. Flexible cloud infrastructure
+2. Easy scalability
+3. Cost-effective
+4. Fast deployment
+5. High availability
+6. Global accessibility
+
+---
+
+# Disadvantages
+
+1. Complex for beginners
+2. Costs increase with heavy usage
+3. Requires cloud knowledge
+
+---
+
+# Applications of Amazon EC2
+
+1. Website hosting
+2. Machine learning
+3. Gaming servers
+4. Big data analytics
+5. Enterprise applications
+6. Cloud storage systems
+
+---
+
+# Real-World Companies Using EC2
+
+| Company | Usage                    |
+| ------- | ------------------------ |
+| Netflix | Streaming infrastructure |
+| Airbnb  | Cloud hosting            |
+| NASA    | Scientific computing     |
+| Adobe   | Cloud services           |
+
+---
+
+# Comparison: Traditional Hosting vs EC2
+
+| Traditional Hosting | Amazon EC2       |
+| ------------------- | ---------------- |
+| Fixed resources     | Elastic scaling  |
+| High hardware cost  | Pay-as-you-go    |
+| Manual setup        | Quick deployment |
+| Limited scalability | Highly scalable  |
+
+---
+
+# Conclusion
+
+Amazon EC2 is a powerful cloud computing web service that provides scalable and flexible virtual servers. It enables organizations to deploy applications efficiently while reducing infrastructure costs and improving scalability, reliability, and performance.
